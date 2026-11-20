@@ -1,4 +1,18 @@
 {
   "version": 1,
-  "items": []
+  "items": [
+    {
+      "kind": "Component",
+      "id": "pad-footing",
+      "title": "Pad footing pressure",
+      "category": "Foundations",
+      "description": "Bearing pressure under a pad footing.",
+      "version": 1,
+      "author": "AlirezaKORD",
+      "file": "components/pad-footing.ocpc",
+      "size": 1218,
+      "sha256": "e7a2d3441255694ef2580b6274bc8141e23bc6fc27cc89cc13b91ae6df51b048",
+      "published": "2026-11-20"
+    }
+  ]
 }
