@@ -1,0 +1,30 @@
+name: Directory index
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      # A pull request (a contribution from OCP): check it.
+      - if: github.event_name == 'pull_request'
+        run: python build_index.py --check
+      # Merged: rebuild the index OCP reads.
+      - if: github.event_name == 'push'
+        run: |
+          python build_index.py
+          git config user.name "ocp-directory"
+          git config user.email "ocp-directory@users.noreply.github.com"
+          git add index.json
+          git diff --cached --quiet || git commit -m "Rebuild the index"
+          git push
