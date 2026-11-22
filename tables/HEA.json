@@ -5,6 +5,6 @@
   "category": "Steel sections",
   "description": "European wide flange beams HEA 100 to HEA 600: dimensions h, b, tw, tf, r and properties A, Iy, Wel_y, Wpl_y, i_y, Iz, Wel_z, Wpl_z, i_z and mass G, with units. Properties computed from the EN 10365 dimensions, including root fillets; within 0.2% of manufacturers' tables. Example: HEA(\"HEA 300\", \"Wpl_y\").",
   "version": 1,
-  "author": "AlirezaKORD",
+  "author": "Alireza",
   "published": "2026-11-22"
 }

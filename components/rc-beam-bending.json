@@ -5,6 +5,6 @@
   "category": "Concrete",
   "description": "Tension reinforcement of a rectangular reinforced concrete section in bending, simplified rectangular stress block (EN 1992-1-1, γc 1.5, γs 1.15): K = M/(b·d²·fck), z = d·min(0.5 + √(0.25 − K/1.134), 0.95), As = M/(0.87·fyk·z). Valid for K ≤ 0.167 (no compression reinforcement needed).",
   "version": 1,
-  "author": "AlirezaKORD",
+  "author": "Alireza",
   "published": "2026-11-22"
 }
