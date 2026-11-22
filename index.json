@@ -3,6 +3,32 @@
   "items": [
     {
       "kind": "Component",
+      "id": "beam-udl",
+      "title": "Simply supported beam, uniform load",
+      "category": "Beams",
+      "description": "Bending moment, shear and mid-span deflection of a simply supported beam under a uniform load: M = wL²/8, V = wL/2, δ = 5wL⁴/(384EI).",
+      "version": 1,
+      "author": "AlirezaKORD",
+      "file": "components/beam-udl.ocpc",
+      "size": 1611,
+      "sha256": "96388fc9063f2164d66418be9d67a8c1ea067c7c5624629756d385078b9799a3",
+      "published": "2026-11-22"
+    },
+    {
+      "kind": "Component",
+      "id": "pad-footing-eccentric",
+      "title": "Pad footing, eccentric load",
+      "category": "Foundations",
+      "description": "Ground pressure under a rectangular pad footing with an axial load and a moment about one axis: e = M/N, σ = N/(B·L)·(1 ± 6e/L). Valid while the whole base is in compression (e ≤ L/6, σ_min ≥ 0). L is the length in the direction of the moment.",
+      "version": 1,
+      "author": "AlirezaKORD",
+      "file": "components/pad-footing-eccentric.ocpc",
+      "size": 1677,
+      "sha256": "31ed0e235e3c821f460f945d5a0b6df5d380550ea8a70c7dcad6e2b34070e055",
+      "published": "2026-11-22"
+    },
+    {
+      "kind": "Component",
       "id": "pad-footing",
       "title": "Pad footing pressure",
       "category": "Foundations",
@@ -13,6 +39,110 @@
       "size": 1218,
       "sha256": "e7a2d3441255694ef2580b6274bc8141e23bc6fc27cc89cc13b91ae6df51b048",
       "published": "2026-11-20"
+    },
+    {
+      "kind": "Component",
+      "id": "rc-beam-bending",
+      "title": "RC rectangular beam, bending reinforcement (EN 1992-1-1)",
+      "category": "Concrete",
+      "description": "Tension reinforcement of a rectangular reinforced concrete section in bending, simplified rectangular stress block (EN 1992-1-1, γc 1.5, γs 1.15): K = M/(b·d²·fck), z = d·min(0.5 + √(0.25 − K/1.134), 0.95), As = M/(0.87·fyk·z). Valid for K ≤ 0.167 (no compression reinforcement needed).",
+      "version": 1,
+      "author": "AlirezaKORD",
+      "file": "components/rc-beam-bending.ocpc",
+      "size": 1840,
+      "sha256": "e6e1641c738d0faf8ab1b4ca68310bc4563a4a59efed30b3047eb39f2dc39b76",
+      "published": "2026-11-22"
+    },
+    {
+      "kind": "Component",
+      "id": "steel-column-buckling",
+      "title": "Steel column, flexural buckling (EN 1993-1-1)",
+      "category": "Steel members",
+      "description": "Flexural buckling resistance of a steel column about one axis, EN 1993-1-1 6.3.1: Ncr = π²EI/Lcr², relative slenderness λ̄, reduction factor χ from the imperfection factor α of the buckling curve (a0 0.13, a 0.21, b 0.34, c 0.49, d 0.76), Nb,Rd = χ·A·fy/γM1. Example: HEB 200 about z (curve c), 4 m, S355.",
+      "version": 1,
+      "author": "AlirezaKORD",
+      "file": "components/steel-column-buckling.ocpc",
+      "size": 2136,
+      "sha256": "a57b4acd76a7016bb4d21b604707fc47db03a116cde3618454d0f9145e15ad87",
+      "published": "2026-11-22"
+    },
+    {
+      "kind": "Table",
+      "id": "Concrete",
+      "title": "Concrete strength classes (EN 1992-1-1)",
+      "category": "Materials",
+      "description": "Concrete classes C12/15 to C90/105 from EN 1992-1-1 Table 3.1: fck, fck_cube, fcm, fctm, fctk005 (5% fractile) and Ecm. Example: Concrete(\"C30/37\", \"fck\").",
+      "version": 1,
+      "author": "AlirezaKORD",
+      "file": "tables/Concrete.csv",
+      "size": 456,
+      "sha256": "20e7f9f3e5f05316f6e225f8f367a800cc3a3883e46573a04c709aa997ed6feb",
+      "published": "2026-11-22"
+    },
+    {
+      "kind": "Table",
+      "id": "HEA",
+      "title": "HEA sections (EN 10365)",
+      "category": "Steel sections",
+      "description": "European wide flange beams HEA 100 to HEA 600: dimensions h, b, tw, tf, r and properties A, Iy, Wel_y, Wpl_y, i_y, Iz, Wel_z, Wpl_z, i_z and mass G, with units. Properties computed from the EN 10365 dimensions, including root fillets; within 0.2% of manufacturers' tables. Example: HEA(\"HEA 300\", \"Wpl_y\").",
+      "version": 1,
+      "author": "AlirezaKORD",
+      "file": "tables/HEA.csv",
+      "size": 1647,
+      "sha256": "69f924acaa71c3646aaeb0b6370fd917d14a689b61dfd0e02b17062ecdbf8b65",
+      "published": "2026-11-22"
+    },
+    {
+      "kind": "Table",
+      "id": "HEB",
+      "title": "HEB sections (EN 10365)",
+      "category": "Steel sections",
+      "description": "European wide flange beams HEB 100 to HEB 600: dimensions h, b, tw, tf, r and properties A, Iy, Wel_y, Wpl_y, i_y, Iz, Wel_z, Wpl_z, i_z and mass G, with units. Properties computed from the EN 10365 dimensions, including root fillets; within 0.2% of manufacturers' tables. Example: HEB(\"HEB 300\", \"Wpl_y\").",
+      "version": 1,
+      "author": "AlirezaKORD",
+      "file": "tables/HEB.csv",
+      "size": 1649,
+      "sha256": "6f355c70fc802770ebb891615a97619639c16d1981fdc5082927b159fb9f1136",
+      "published": "2026-11-22"
+    },
+    {
+      "kind": "Table",
+      "id": "IPE",
+      "title": "IPE sections (EN 10365)",
+      "category": "Steel sections",
+      "description": "European I beams IPE 80 to IPE 600: dimensions h, b, tw, tf, r and properties A, Iy, Wel_y, Wpl_y, i_y, Iz, Wel_z, Wpl_z, i_z and mass G, with units. Properties computed from the EN 10365 dimensions, including root fillets; within 0.2% of manufacturers' tables. Example: IPE(\"IPE 300\", \"Wpl_y\").",
+      "version": 1,
+      "author": "AlirezaKORD",
+      "file": "tables/IPE.csv",
+      "size": 1605,
+      "sha256": "01cc1d513cb0f4193ec3eb7d87ff22aaf9a571d450faf8b8965779ad338c26aa",
+      "published": "2026-11-22"
+    },
+    {
+      "kind": "Table",
+      "id": "Rebar",
+      "title": "Reinforcing bar areas",
+      "category": "Materials",
+      "description": "Reinforcing bars 6 to 40 mm: the area of 1 to 8 bars (A1 to A8) and the mass per metre G (7850 kg/m³). Example: Rebar(16, \"A4\") is the area of 4 bars of 16 mm.",
+      "version": 1,
+      "author": "AlirezaKORD",
+      "file": "tables/Rebar.csv",
+      "size": 678,
+      "sha256": "c3fc25e3a3b3d7c4b91db581bcd25ee15e2eec2198c34dec38a698b06838d6d4",
+      "published": "2026-11-22"
+    },
+    {
+      "kind": "Table",
+      "id": "SteelGrade",
+      "title": "Structural steel grades (EN 1993-1-1)",
+      "category": "Materials",
+      "description": "Hot-rolled steel S235 to S450 (EN 10025-2) from EN 1993-1-1 Table 3.1: fy and fu for t up to 40 mm, fy_40_80 and fu_40_80 for 40 < t up to 80 mm, and E. Example: SteelGrade(\"S355\", \"fy\").",
+      "version": 1,
+      "author": "AlirezaKORD",
+      "file": "tables/SteelGrade.csv",
+      "size": 162,
+      "sha256": "35e4c158460387191f25aa2d39d0d643a5961cc21d760c40d80c58eb0961234c",
+      "published": "2026-11-22"
     }
   ]
 }
