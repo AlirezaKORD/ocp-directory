@@ -1,0 +1,10 @@
+{
+  "kind": "Table",
+  "id": "Rebar",
+  "title": "Reinforcing bar areas",
+  "category": "Materials",
+  "description": "Reinforcing bars 6 to 40 mm: the area of 1 to 8 bars (A1 to A8) and the mass per metre G (7850 kg/m³). Example: Rebar(16, \"A4\") is the area of 4 bars of 16 mm.",
+  "version": 1,
+  "author": "AlirezaKORD",
+  "published": "2026-11-22"
+}

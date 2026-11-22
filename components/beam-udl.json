@@ -1,0 +1,10 @@
+{
+  "kind": "Component",
+  "id": "beam-udl",
+  "title": "Simply supported beam, uniform load",
+  "category": "Beams",
+  "description": "Bending moment, shear and mid-span deflection of a simply supported beam under a uniform load: M = wL²/8, V = wL/2, δ = 5wL⁴/(384EI).",
+  "version": 1,
+  "author": "AlirezaKORD",
+  "published": "2026-11-22"
+}
