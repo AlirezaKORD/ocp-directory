@@ -1,0 +1,10 @@
+{
+  "kind": "Component",
+  "id": "pad-footing-eccentric",
+  "title": "Pad footing, eccentric load",
+  "category": "Foundations",
+  "description": "Ground pressure under a rectangular pad footing with an axial load and a moment about one axis: e = M/N, σ = N/(B·L)·(1 ± 6e/L). Valid while the whole base is in compression (e ≤ L/6, σ_min ≥ 0). L is the length in the direction of the moment.",
+  "version": 1,
+  "author": "AlirezaKORD",
+  "published": "2026-11-22"
+}

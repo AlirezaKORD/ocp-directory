@@ -37,8 +37,13 @@ def check_table(path):
         text = text.decode("utf-8-sig")
     except UnicodeDecodeError:
         text = text.decode("latin-1")
-    if len([line for line in text.splitlines() if line.strip()]) < 2:
+    lines = [line for line in text.splitlines() if line.strip()]
+    if len(lines) < 2:
         raise ValueError("needs a heading row and at least one row")
+    separator = max(";\t,", key=lines[0].count)
+    names = [re.split(r"[\[(]", cell)[0].strip().lower() for cell in lines[0].split(separator)[1:]]
+    if len(set(names)) != len(names):
+        raise ValueError("two columns have the same name (OCP ignores case: Iy and iy are the same)")
 
 
 def build():

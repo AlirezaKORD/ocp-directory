@@ -1,0 +1,10 @@
+{
+  "kind": "Component",
+  "id": "steel-column-buckling",
+  "title": "Steel column, flexural buckling (EN 1993-1-1)",
+  "category": "Steel members",
+  "description": "Flexural buckling resistance of a steel column about one axis, EN 1993-1-1 6.3.1: Ncr = π²EI/Lcr², relative slenderness λ̄, reduction factor χ from the imperfection factor α of the buckling curve (a0 0.13, a 0.21, b 0.34, c 0.49, d 0.76), Nb,Rd = χ·A·fy/γM1. Example: HEB 200 about z (curve c), 4 m, S355.",
+  "version": 1,
+  "author": "AlirezaKORD",
+  "published": "2026-11-22"
+}

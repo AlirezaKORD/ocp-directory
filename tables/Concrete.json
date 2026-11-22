@@ -1,0 +1,10 @@
+{
+  "kind": "Table",
+  "id": "Concrete",
+  "title": "Concrete strength classes (EN 1992-1-1)",
+  "category": "Materials",
+  "description": "Concrete classes C12/15 to C90/105 from EN 1992-1-1 Table 3.1: fck, fck_cube, fcm, fctm, fctk005 (5% fractile) and Ecm. Example: Concrete(\"C30/37\", \"fck\").",
+  "version": 1,
+  "author": "AlirezaKORD",
+  "published": "2026-11-22"
+}
